@@ -1,0 +1,86 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    width: 100vw;
+    height: 56.25vw; /* 16:9 aspect ratio */
+    max-height: 100vh;
+    max-width: 177.78vh;
+    background-color: #f0f0f0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .narrative-sequence, .true-false-question, .map-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+  }
+
+  .narrative-image {
+    max-width: 80%;  /* Limite la largeur de l'image à 80% de la largeur de l'écran */
+    height: auto;    /* Maintient le ratio de l'image */
+    margin-bottom: 20px;  /* Espace entre l'image et le texte */
+  }
+  
+  .narrative-sequence p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .score {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+/* Style pour fixer le score en haut de la page */
+.score-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 10px;
+  text-align: center;
+  z-index: 1000;  /* S'assurer que le score soit au-dessus de tout autre contenu */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour centrer le score et lui donner une taille de police */
+.score-container h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Style pour le conteneur principal du jeu */
+.app-container {
+  padding-top: 60px;  /* Espace réservé pour le score */
+}
+
+/* Style pour le contenu du jeu */
+.content-container {
+  margin-top: 20px;
+  padding: 20px;
+}
