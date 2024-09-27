@@ -90,6 +90,11 @@ const linkApophis = {
     text: "Lire l'article"
   };
 
+  const linkArticles = {
+    url: "https://marvelous-pen-90c.notion.site/Articles-d47e0ffca861445e859b6c46a373c50f",  // Remplace cette URL par celle que tu veux
+    text: "Voir tout nos articles"
+  };
+
   const locations = ['Paris', 'New York', 'Tokyo'];
 
   return (
@@ -132,6 +137,13 @@ const linkApophis = {
           <NarrativeWithLinkSequence
             steps={[{ text:"Pour en apprendre plus, vous pouvez lire un article sur le serpent des Ténèbres et du cahos"}]}
             externalLink={linkApophis}
+            onNext={handleNarrativeEnd}
+          />
+        )}
+        {step === 19 && (
+          <NarrativeWithLinkSequence
+            steps={[{ text:"Merci d'avoir joué à notre démo ! Pour consulter les autres sujets présents sur notre carte, consultez nos articles"}]}
+            externalLink={linkArticles}
             onNext={handleNarrativeEnd}
           />
         )}
