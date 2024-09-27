@@ -11,6 +11,10 @@ const App = () => {
   const [retryMode, setRetryMode] = useState(false); 
   const handleNarrativeEnd = () => setStep(step + 1);
   const handleVideoEnd = () => setStep(step + 1);
+  const handleEndGame = () => {
+    setStep(0);
+    setScore(0);
+  };
 
   const handleAnswer = (points) => {
     setScore(score + points);  // Ajoute les points obtenus à la première ou à la deuxième question
@@ -135,8 +139,8 @@ const linkApophis = {
         {step === 17 && <TrueFalseQuestion question={trueFalseHimalaya} retryQuestion={retryHimalaya} onAnswer={handleAnswer} />}
         {step === 18 && (
           <NarrativeWithLinkSequence
-            steps={[{ text:"Pour en apprendre plus, vous pouvez lire un article sur le serpent des Ténèbres et du cahos"}]}
-            externalLink={linkApophis}
+            steps={[{ text:"Pour en apprendre plus, vous pouvez lire un article le lieu du bonheur paisible"}]}
+            externalLink={linkHimalaya}
             onNext={handleNarrativeEnd}
           />
         )}
@@ -144,7 +148,7 @@ const linkApophis = {
           <NarrativeWithLinkSequence
             steps={[{ text:"Merci d'avoir joué à notre démo ! Pour consulter les autres sujets présents sur notre carte, consultez nos articles"}]}
             externalLink={linkArticles}
-            onNext={handleNarrativeEnd}
+            onNext={handleEndGame}
           />
         )}
       </div>
