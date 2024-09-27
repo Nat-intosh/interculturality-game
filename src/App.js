@@ -4,7 +4,6 @@ import NarrativeWithLinkSequence from './components/NarrativeWithLinkSequence';
 import VideoSequence from './components/VideoSequence';
 import TrueFalseQuestion from './components/TrueFalseQuestion';
 import InteractiveMap from './components/InteractiveMap';
-
 const App = () => {
   const [step, setStep] = useState(0);
   const [score, setScore] = useState(0);
@@ -35,10 +34,10 @@ const App = () => {
   ]
 
   const narrativeDeluge = [
-    { text: "Un orage gronde soudainement. *orage*"},
+    { text: "Un orage gronde soudainement."},
     { text: "L’océan se met soudainement à se déchainer. Les abysses engloutissent la cité de l’Atlantide, et l’Alien se sauve en barque, ayant malheureusement perdu son vaisseau dans l’incident."},
     { text: "L'oracle resté sous son bras, se met à briller et à voler devant lui."},
-    { text: "Celui-ci promet de lui donner des pièces de vaissa en échange de réponses à ses énigmes"}
+    { text: "Celui-ci promet de lui donner des pièces de vaisseau en échange de réponses à ses énigmes."}
 ]
 
   const narrativeApophis = [
@@ -52,22 +51,22 @@ const linkApophis = {
 };
 
   const trueFalseQuestion = {
-    text: "Apophis est une divinité égyptienne représentée sous la forme d’une hyène (Serpent)",
+    text: "Apophis est une divinité égyptienne représentée sous la forme d’une hyène.",
     correct: false
   };
 
   const retryQuestion = {
-    text: "Apophis fut une représentation du bien-être et de la plénitude dans la mythologie égyptienne (personnification du chaos, du mal, de l'obscurité, cherchant à anéantir la création divine)",
+    text: "Apophis fut une représentation du bien-être et de la plénitude dans la mythologie égyptienne.",
     correct: false
   };
 
   const trueFalseMesopo = {
-    text: "Le Ney (instrument) est d’origine amérindienne",
+    text: "Le Ney (instrument) est d’origine amérindienne.",
     correct: false
   };
 
   const retryMesopo = {
-    text: "Son nom provient d'un mot persan signifiant « roseau »",
+    text: "Son nom provient d'un mot persan signifiant « roseau ».",
     correct: true
   };
 
