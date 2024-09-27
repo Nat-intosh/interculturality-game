@@ -46,7 +46,7 @@ const App = () => {
 ]
 
 const linkApophis = {
-  url: "https://example.com/article",  // Remplace cette URL par celle que tu veux
+  url: "https://marvelous-pen-90c.notion.site/Apophis-le-serpent-des-t-n-bres-a462579ea0f24a708f327049efb19ee3?pvs=4",  // Remplace cette URL par celle que tu veux
   text: "Lire l'article"
 };
 
@@ -71,7 +71,7 @@ const linkApophis = {
   };
 
   const linkMesopo = {
-    url: "https://example.com/article",  // Remplace cette URL par celle que tu veux
+    url: "https://marvelous-pen-90c.notion.site/Le-Ney-edf4215a32b34ac198fece5af6d1dba1?pvs=4",  // Remplace cette URL par celle que tu veux
     text: "Lire l'article"
   };
 
@@ -86,7 +86,7 @@ const linkApophis = {
   };
 
   const linkHimalaya = {
-    url: "https://example.com/article",  // Remplace cette URL par celle que tu veux
+    url: "https://marvelous-pen-90c.notion.site/Shambhala-lieu-du-bonheur-paisible-77309a02572a4f00add0bf9894d7b5be?pvs=4",  // Remplace cette URL par celle que tu veux
     text: "Lire l'article"
   };
 
